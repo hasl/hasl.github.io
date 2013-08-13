@@ -4,7 +4,7 @@
 
 url: http://hasl.github.io
 title: Lorem Ipsum
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+#subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 author: John Doe
 simple_search: http://google.com/search
 description:
@@ -27,7 +27,7 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:title/
 source: source
 destination: public
 plugins: plugins
@@ -39,12 +39,12 @@ rdiscount:
     - autolink
     - footnotes
     - smart
-pygments: false # default python pygments have been replaced by pygments.rb
+pygments: true # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "&rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -53,7 +53,7 @@ titlecase: true       # Converts page and post titles to titlecase
 default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
-# and add an array with the asides you want to use.
+# and add an array with the asides you want to use.Ω
 # blog_index_asides:
 # post_asides:
 # page_asides:
@@ -69,8 +69,8 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_tweet_button: true
+twitter_user: 
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false

@@ -1,7 +1,7 @@
 body > header {
-  background: $header-bg;
+  background: #fff;
   h1 {
-    display: inline-block;
+    text-align: center;
     margin: 0;
     a, a:visited, a:hover {
       color: $title_color;
@@ -10,6 +10,7 @@ body > header {
   }
   h2 {
     margin: .2em 0 0;
+    text-align: center;
     @extend .sans;
     font-size: 1em;
     color: $subtitle-color;
